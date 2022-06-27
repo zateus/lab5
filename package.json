@@ -6,11 +6,9 @@
     "build": "ng build",
     "watch": "npm-watch",
     "test": "ng test",
-    "move_uk": "npx grunt move-uk",
     "build_watch": "ng build"
   },
   "watch": {
-    "move_uk": "dist",
     "build_watch": {
       "patterns": [
         "src"

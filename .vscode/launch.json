@@ -3,7 +3,7 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"command": "npx swa start dist/till-tomorrow --api-location=api",
+			"command": "npx swa start dist/lab5 --api-location=api",
 			"name": "Run npm watch",
 			"request": "launch",
 			"type": "node-terminal",

@@ -1,3 +1,40 @@
 <div>
+	<div class="row g-3">
 
+		<div class="col">
+			<div class="input-group mb-3">
+				<span class="input-group-text">Id</span>
+				<input [(ngModel)]="tagId" type="text" class="form-control" placeholder="Tag's id" aria-label="Tag's id">
+			</div>
+		</div>
+		<div class="col">
+			<div class="input-group mb-3">
+				<span class="input-group-text">Tag</span>
+				<input [(ngModel)]="newTag" type="text" class="form-control" placeholder="Tag's name" aria-label="Tag's name">
+			</div>
+		</div>
+	</div>
+
+	<div class="input-group">
+		<button (click)="updateTag()" class="btn btn-secondary" type="button">Update</button>
+		<button (click)="addTag()" class="btn btn-secondary" type="button">Add</button>
+		<button (click)="deleteTag()" class="btn btn-secondary" type="button">Delete</button>
+	</div>
+ 
+	<table class="table">
+		<thead>
+			<tr>
+				<th scope="col">#</th>
+				<th scope="col">Id</th>
+				<th scope="col">Tag</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let tag of tags; index as i;">
+				<th scope="row">{{i}}</th>
+				<td>{{tag.id}}</td>
+				<td>{{tag.title}}</td>
+			</tr>
+		</tbody>
+	</table>
 </div>

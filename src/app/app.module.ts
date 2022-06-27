@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
 	declarations: [
@@ -15,6 +16,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 	],
 	imports: [
 		BrowserModule,
+		FormsModule,
 		AppRoutingModule,
 		HttpClientModule
 	],
